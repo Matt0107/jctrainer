@@ -1,0 +1,34 @@
+.footer {
+    background-color: #111;
+    color: #fff;
+    padding: 40px 20px;
+    text-align: center;
+  }
+  
+  .footer-content {
+    max-width: 600px;
+    margin: auto;
+  }
+  
+  .contact-info h3 {
+    font-size: 1.5em;
+    margin-bottom: 10px;
+  }
+  
+  .footer-note {
+    margin-top: 20px;
+    font-size: 0.8em;
+    color: #666;
+  }
+  
+  /* Responsive */
+  @media (max-width: 768px) {
+    .contact-info h3 {
+      font-size: 1.2em;
+    }
+  
+    .footer-note {
+      font-size: 0.7em;
+    }
+  }
+  

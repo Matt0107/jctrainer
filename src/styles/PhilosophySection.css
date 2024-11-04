@@ -1,0 +1,74 @@
+.philosophy-section {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    background-color: #111;
+    color: #fff;
+    padding: 60px 20px;
+  }
+  
+  .philosophy-content {
+    flex: 1;
+    min-width: 280px;
+    padding: 20px;
+  }
+  
+  .philosophy-content h2 {
+    font-size: 2em;
+    margin-bottom: 20px;
+  }
+  
+  .philosophy-content p {
+    font-size: 1em;
+    line-height: 1.6;
+    margin-bottom: 10px;
+  }
+  
+  .learn-more-button {
+    margin-top: 20px;
+    padding: 10px 20px;
+    background-color: #FFD700;
+    border: none;
+    color: #111;
+    font-size: 1em;
+    cursor: pointer;
+    transition: background-color 0.3s;
+  }
+  
+  .learn-more-button:hover {
+    background-color: #FFA500;
+  }
+  
+  .philosophy-image {
+    flex: 1;
+    min-width: 280px;
+    padding: 20px;
+    text-align: center;
+  }
+  
+  .philosophy-image img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 8px;
+  }
+  
+  /* Responsiveness */
+  @media (max-width: 768px) {
+    .philosophy-section {
+      flex-direction: column;
+    }
+  
+    .philosophy-content h2 {
+      font-size: 1.5em;
+    }
+    
+    .philosophy-content p {
+      font-size: 0.9em;
+    }
+  
+    .learn-more-button {
+      font-size: 0.9em;
+      padding: 8px 16px;
+    }
+  }
+  

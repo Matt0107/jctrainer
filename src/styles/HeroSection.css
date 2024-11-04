@@ -1,0 +1,43 @@
+.hero-section {
+    background-color: #111; /* Couleur sombre */
+    color: #fff;
+    text-align: center;
+    padding: 100px 20px;
+  }
+  
+  .hero-section h1 {
+    font-size: 3em;
+    font-weight: bold;
+  }
+  
+  .hero-section h1 span {
+    color: #FFD700; /* Accent or */
+  }
+  
+  .discover-button {
+    margin-top: 20px;
+    padding: 10px 20px;
+    background-color: #FFD700;
+    border: none;
+    color: #111;
+    font-size: 1em;
+    cursor: pointer;
+    transition: background-color 0.3s;
+  }
+  
+  .discover-button:hover {
+    background-color: #FFA500;
+  }
+  
+  /* Responsive Design */
+  @media (max-width: 768px) {
+    .hero-section h1 {
+      font-size: 2em;
+    }
+  
+    .discover-button {
+      font-size: 0.9em;
+      padding: 8px 16px;
+    }
+  }
+  
