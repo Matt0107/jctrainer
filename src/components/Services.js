@@ -4,7 +4,7 @@ import '../styles/Services.css';
 
 function Services() {
   return (
-    <section className="services-section">
+    <section className="services-section full-height-section">
       <h2 className="services-title">Une méthode unique, précise et efficace</h2>
       <p className="services-description">
         Chaque personne a son métabolisme, son rythme de vie et ses besoins. 
