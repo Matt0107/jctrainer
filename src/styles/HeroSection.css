@@ -1,43 +1,76 @@
 .hero-section {
-    background-color: #111; /* Couleur sombre */
+    background-image: url('../assets/coach-home.jpg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
     color: #fff;
     text-align: center;
-    padding: 100px 20px;
+    padding: 0 20px;
   }
   
   .hero-section h1 {
     font-size: 3em;
     font-weight: bold;
+    text-transform: uppercase;
   }
   
   .hero-section h1 span {
-    color: #FFD700; /* Accent or */
+    color: #D4AF37;
   }
   
-  .discover-button {
+  /* Scroll Indicator */
+  .scroll-indicator {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
     margin-top: 20px;
-    padding: 10px 20px;
-    background-color: #FFD700;
-    border: none;
-    color: #111;
+    color: #D4AF37;
     font-size: 1em;
+    font-weight: 500;
     cursor: pointer;
-    transition: background-color 0.3s;
   }
   
-  .discover-button:hover {
-    background-color: #FFA500;
+  .scroll-indicator span {
+    margin-bottom: 10px;
   }
   
-  /* Responsive Design */
+  .scroll-line {
+    width: 2px;
+    height: 40px;
+    background-color: #D4AF37;
+    position: relative;
+    overflow: hidden;
+  }
+  
+  .scroll-line::before {
+    content: '';
+    position: absolute;
+    top: -40px;
+    width: 2px;
+    height: 40px;
+    background-color: #D4AF37;
+    animation: scroll-down-animation 1.5s infinite linear;
+  }
+  
+  /* Animation for the scroll line */
+  @keyframes scroll-down-animation {
+    0% {
+      top: -40px;
+    }
+    100% {
+      top: 40px;
+    }
+  }
+  
+  /* Responsiveness */
   @media (max-width: 768px) {
     .hero-section h1 {
       font-size: 2em;
-    }
-  
-    .discover-button {
-      font-size: 0.9em;
-      padding: 8px 16px;
     }
   }
   

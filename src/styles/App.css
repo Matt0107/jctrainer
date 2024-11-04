@@ -1,0 +1,66 @@
+h1 {
+  text-transform: uppercase; /* Transforme tous les h1 en majuscules */
+}
+
+h1 span {
+  color: #D4AF37; /* Applique la couleur dorée aux éléments <span> dans les h1 */
+}
+.full-height-section {
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 20px;
+  box-sizing: border-box;
+  text-align: center;
+}
+
+/* Styles spécifiques pour la HeroSection */
+.hero-section h1 {
+  font-size: 3em;
+}
+
+.scroll-indicator {
+  font-size: 1em;
+}
+
+/* Responsive adjustments */
+@media (max-width: 1024px) {
+  .full-height-section {
+    padding: 15px; /* Réduction du padding sur les écrans moyens */
+  }
+  
+  .hero-section h1 {
+    font-size: 2.5em;
+  }
+}
+
+@media (max-width: 768px) {
+  .full-height-section {
+    padding: 10px; /* Réduction supplémentaire du padding pour les petits écrans */
+  }
+  
+  .hero-section h1 {
+    font-size: 2em; /* Réduction de la taille du texte */
+  }
+  
+  .scroll-indicator {
+    font-size: 0.9em; /* Réduction de la taille de l'indicateur de défilement */
+  }
+}
+
+@media (max-width: 480px) {
+  .full-height-section {
+    padding: 5px; /* Réduction maximale du padding pour très petits écrans */
+    height: auto; /* Permet à la section de s'adapter au contenu */
+  }
+
+  .hero-section h1 {
+    font-size: 1.5em;
+  }
+
+  .scroll-indicator {
+    font-size: 0.8em;
+  }
+}

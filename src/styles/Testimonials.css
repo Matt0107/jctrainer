@@ -8,6 +8,7 @@
   .testimonials-section h2 {
     font-size: 2em;
     margin-bottom: 20px;
+    text-transform: uppercase; /* Titre en majuscule */
   }
   
   .testimonial {
@@ -34,22 +35,6 @@
   .testimonial-author {
     font-size: 1em;
     font-weight: bold;
-    color: #FFD700; /* Couleur or */
-  }
-  
-  .view-all-button {
-    margin-top: 20px;
-    padding: 10px 20px;
-    background-color: transparent;
-    color: #FFD700;
-    font-size: 1em;
-    cursor: pointer;
-    text-decoration: underline;
-    border: none;
-    transition: color 0.3s;
-  }
-  
-  .view-all-button:hover {
-    color: #FFA500;
+    color: #D4AF37; /* Couleur dorée */
   }
   

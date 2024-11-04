@@ -8,7 +8,7 @@ const Footer = () => {
       <div className="footer-content">
         <div className="contact-info">
           <h3>Coordonnées</h3>
-          <p>Jean-Christophe, coach sportif</p>
+          <p>Jean-Charles, coach sportif</p>
           <p>Téléphone : 06 12 34 56 78</p>
           <p>Email : contact@jctrainer.com</p>
         </div>
