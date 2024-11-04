@@ -8,7 +8,7 @@ const PhilosophySection = () => {
       <div className="philosophy-content">
         <h2>Une philosophie unique</h2>
         <p>
-          Jean-Christophe, coach sportif indépendant depuis plus de 10 ans, a su développer une approche
+          Jean-Charles, coach sportif indépendant depuis plus de 10 ans, a su développer une approche
           personnalisée et adaptée à chaque client. Sa philosophie repose sur la motivation, la persévérance,
           et l'écoute de chacun pour atteindre des objectifs de bien-être physique et mental.
         </p>

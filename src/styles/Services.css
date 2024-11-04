@@ -1,0 +1,74 @@
+.services-section {
+    background-color: #111; /* Fond noir pour correspondre au thème */
+    color: #fff;
+    padding: 60px 20px;
+    text-align: center;
+  }
+  
+  .services-title {
+    font-size: 2em;
+    margin-bottom: 20px;
+    text-transform: uppercase;
+  }
+  
+  .services-description {
+    max-width: 800px;
+    margin: 0 auto 40px auto;
+    font-size: 1em;
+    line-height: 1.6;
+    color: #aaa; /* Texte secondaire légèrement plus clair */
+  }
+  
+  .services-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr); /* Quatre colonnes pour les services */
+    gap: 40px;
+  }
+  
+  .service {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+  
+  .service-icon {
+    font-size: 3em;
+    color: #D4AF37; /* Couleur cyan pour les icônes */
+    margin-bottom: 15px;
+  }
+  
+  .service-title {
+    font-size: 1.2em;
+    font-weight: bold;
+    margin-bottom: 10px;
+  }
+  
+  .service-description {
+    font-size: 0.9em;
+    color: #ddd;
+  }
+  
+  /* Responsiveness */
+  @media (max-width: 1024px) {
+    .services-grid {
+      grid-template-columns: repeat(2, 1fr); /* Deux colonnes sur les écrans moyens */
+      gap: 20px;
+    }
+  }
+  
+  @media (max-width: 768px) {
+    .services-grid {
+      grid-template-columns: 1fr; /* Une seule colonne sur les petits écrans */
+      gap: 20px;
+    }
+  
+    .service-icon {
+      font-size: 2.5em; /* Réduit légèrement la taille des icônes */
+    }
+  
+    .services-title {
+      font-size: 1.5em; /* Réduit la taille du titre sur mobile */
+    }
+  }
+  
