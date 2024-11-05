@@ -1,0 +1,19 @@
+{
+    "navbar": {
+      "home": "Home",
+      "philosophy": "Philosophy",
+      "services": "Services",
+      "testimonials": "Testimonials",
+      "contact": "Contact"
+    },
+    "footer": {
+      "contactInfo": "Contact Info",
+      "phone": "Phone",
+      "email": "Email"
+    },
+    "philosophy": {
+      "title": "A Unique Philosophy",
+      "description": "Jean-Charles, an independent sports coach with over 10 years of experience, has developed a personalized approach..."
+    }
+  }
+  
