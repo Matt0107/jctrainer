@@ -28,7 +28,6 @@ function Navbar() {
         <nav className={`navbar ${isScrolled ? 'scrolled' : ''}`}>
             <div className="navbar-container">
                 <div className="navbar-links">
-                    <Link to="hero-section" smooth={true} duration={500}>{t('navbar.home')}</Link>
                     <Link to="philosophy-section" smooth={true} duration={500}>{t('navbar.philosophy')}</Link>
                     <Link to="services-section" smooth={true} duration={500}>{t('navbar.services')}</Link>
                     <Link to="testimonials" smooth={true} duration={500}>{t('navbar.testimonials')}</Link>
@@ -50,12 +49,16 @@ function Navbar() {
                     )}
                 </div>
 
-                {/* Burger Icon for Responsive */}
-                <div className="burger-icon" onClick={() => setIsMenuOpen(!isMenuOpen)}>
-                    <div className={`line ${isMenuOpen ? 'open' : ''}`}></div>
-                    <div className={`line ${isMenuOpen ? 'open' : ''}`}></div>
-                    <div className={`line ${isMenuOpen ? 'open' : ''}`}></div>
-                </div>
+                {/* Affiche le burger icon si le menu est fermé, et le bouton de fermeture si le menu est ouvert */}
+                {!isMenuOpen ? (
+                    <div className="burger-icon" onClick={() => setIsMenuOpen(true)}>
+                        <div className="line"></div>
+                        <div className="line"></div>
+                        <div className="line"></div>
+                    </div>
+                ) : (
+                    <button className="close-button" onClick={() => setIsMenuOpen(false)}>×</button>
+                )}
 
                 {/* Burger Menu */}
                 <div className={`burger-menu ${isMenuOpen ? 'show' : ''}`}>

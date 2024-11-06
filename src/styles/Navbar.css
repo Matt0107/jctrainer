@@ -11,16 +11,16 @@
   align-items: center;
   transition: background-color 0.3s ease;
   z-index: 1000;
-  box-sizing: border-box; /* Assure que tout l'espace est pris en compte */
+  box-sizing: border-box;
 }
 
 .navbar-container {
   display: flex;
   align-items: center;
   width: 100%;
-  max-width: 1200px; /* Limite la largeur de la navbar */
-  padding: 0 20px; /* Espace à gauche et droite pour éviter le collage */
-  justify-content: space-between; /* Pour centrer les liens et mettre le commutateur à droite */
+  max-width: 1200px;
+  padding: 0 20px;
+  justify-content: space-between;
 }
 
 .navbar.scrolled {
@@ -94,7 +94,6 @@
   flex-direction: column;
   cursor: pointer;
   z-index: 1100;
-  margin-left: auto;
 }
 
 .burger-icon .line {
@@ -102,19 +101,20 @@
   height: 3px;
   background-color: #fff;
   margin: 6px 0;
-  transition: all 0.3s ease;
+  transition: background-color 0.3s ease;
 }
 
-.burger-icon .open:nth-child(1) {
-  transform: rotate(45deg) translate(5px, 5px);
-}
-
-.burger-icon .open:nth-child(2) {
-  opacity: 0;
-}
-
-.burger-icon .open:nth-child(3) {
-  transform: rotate(-45deg) translate(5px, -5px);
+/* Close Button in Burger Menu */
+.close-button {
+  position: absolute;
+  top: 20px;
+  right: 20px;
+  font-size: 2em;
+  color: #fff;
+  background: none;
+  border: none;
+  cursor: pointer;
+  z-index: 1100;
 }
 
 /* Burger Menu */
@@ -131,11 +131,11 @@
   align-items: center;
   transition: transform 0.4s ease;
   z-index: 1000;
-  transform: translateX(100%); /* Cache le menu par défaut */
+  transform: translateX(100%);
 }
 
 .burger-menu.show {
-  transform: translateX(0); /* Affiche le menu en le faisant glisser */
+  transform: translateX(0);
 }
 
 .burger-menu a {
@@ -146,23 +146,23 @@
   animation: slideIn 0.5s forwards ease;
 }
 
-.burger-menu a:nth-child(1) {
+.burger-menu a:nth-child(2) {
   animation-delay: 0.1s;
 }
 
-.burger-menu a:nth-child(2) {
+.burger-menu a:nth-child(3) {
   animation-delay: 0.2s;
 }
 
-.burger-menu a:nth-child(3) {
+.burger-menu a:nth-child(4) {
   animation-delay: 0.3s;
 }
 
-.burger-menu a:nth-child(4) {
+.burger-menu a:nth-child(5) {
   animation-delay: 0.4s;
 }
 
-.burger-menu a:nth-child(5) {
+.burger-menu a:nth-child(6) {
   animation-delay: 0.5s;
 }
 
@@ -189,26 +189,26 @@
 /* Keyframes pour les liens du menu burger */
 @keyframes slideIn {
   from {
-      opacity: 0;
-      transform: translateX(20px);
+    opacity: 0;
+    transform: translateX(20px);
   }
   to {
-      opacity: 1;
-      transform: translateX(0);
+    opacity: 1;
+    transform: translateX(0);
   }
 }
 
 /* Responsive */
 @media (max-width: 768px) {
   .navbar-links {
-      display: none;
+    display: none;
   }
 
   .burger-icon {
-      display: flex;
+    display: flex;
   }
 
   .language-switcher {
-      display: none;
+    display: none;
   }
 }
