@@ -1,6 +1,9 @@
+/* Structure de la Navbar */
 .navbar {
   position: fixed;
   top: 0;
+  left: 0;
+  right: 0;
   width: 100%;
   padding: 20px 0;
   display: flex;
@@ -8,16 +11,25 @@
   align-items: center;
   transition: background-color 0.3s ease;
   z-index: 1000;
+  box-sizing: border-box; /* Assure que tout l'espace est pris en compte */
+}
+
+.navbar-container {
+  display: flex;
+  align-items: center;
+  width: 100%;
+  max-width: 1200px; /* Limite la largeur de la navbar */
+  padding: 0 20px; /* Espace à gauche et droite pour éviter le collage */
+  justify-content: space-between; /* Pour centrer les liens et mettre le commutateur à droite */
 }
 
 .navbar.scrolled {
-  background-color: rgba(0, 0, 0, 0.8); /* Fond sombre semi-transparent */
-  padding: 15px 0;
+  background-color: rgba(0, 0, 0, 0.8);
 }
 
 .navbar-links {
-  flex: 1;
   display: flex;
+  flex: 1;
   justify-content: center;
 }
 
@@ -32,13 +44,12 @@
 }
 
 .navbar-links a:hover {
-  color: #FFD700; /* Accent or */
+  color: #FFD700;
 }
 
 /* Language Switcher */
 .language-switcher {
   position: relative;
-  margin-left: auto;
 }
 
 .language-button {
@@ -53,9 +64,9 @@
 
 .language-dropdown {
   position: absolute;
-  top: 100%; /* Positionne sous le bouton */
+  top: 100%;
   right: 0;
-  background-color: #222; /* Fond du menu déroulant */
+  background-color: #222;
   border-radius: 4px;
   overflow: hidden;
   box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
@@ -73,14 +84,131 @@
 }
 
 .language-dropdown button:hover {
-  background-color: #444; /* Change le fond au survol */
-  color: #FFD700; /* Accent or */
+  background-color: #444;
+  color: #FFD700;
+}
+
+/* Burger Icon */
+.burger-icon {
+  display: none;
+  flex-direction: column;
+  cursor: pointer;
+  z-index: 1100;
+  margin-left: auto;
+}
+
+.burger-icon .line {
+  width: 25px;
+  height: 3px;
+  background-color: #fff;
+  margin: 6px 0;
+  transition: all 0.3s ease;
+}
+
+.burger-icon .open:nth-child(1) {
+  transform: rotate(45deg) translate(5px, 5px);
+}
+
+.burger-icon .open:nth-child(2) {
+  opacity: 0;
+}
+
+.burger-icon .open:nth-child(3) {
+  transform: rotate(-45deg) translate(5px, -5px);
+}
+
+/* Burger Menu */
+.burger-menu {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100vh;
+  background-color: rgba(0, 0, 0, 0.95);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  transition: transform 0.4s ease;
+  z-index: 1000;
+  transform: translateX(100%); /* Cache le menu par défaut */
+}
+
+.burger-menu.show {
+  transform: translateX(0); /* Affiche le menu en le faisant glisser */
+}
+
+.burger-menu a {
+  color: #fff;
+  font-size: 1.5em;
+  margin: 20px 0;
+  opacity: 0;
+  animation: slideIn 0.5s forwards ease;
+}
+
+.burger-menu a:nth-child(1) {
+  animation-delay: 0.1s;
+}
+
+.burger-menu a:nth-child(2) {
+  animation-delay: 0.2s;
+}
+
+.burger-menu a:nth-child(3) {
+  animation-delay: 0.3s;
+}
+
+.burger-menu a:nth-child(4) {
+  animation-delay: 0.4s;
+}
+
+.burger-menu a:nth-child(5) {
+  animation-delay: 0.5s;
+}
+
+/* Language Switcher in Burger Menu */
+.burger-language-switcher {
+  display: flex;
+  gap: 10px;
+  margin-top: 20px;
+}
+
+.burger-language-switcher button {
+  background: transparent;
+  border: none;
+  color: #fff;
+  font-size: 1.2em;
+  cursor: pointer;
+  padding: 5px 10px;
+}
+
+.burger-language-switcher button:hover {
+  color: #FFD700;
+}
+
+/* Keyframes pour les liens du menu burger */
+@keyframes slideIn {
+  from {
+      opacity: 0;
+      transform: translateX(20px);
+  }
+  to {
+      opacity: 1;
+      transform: translateX(0);
+  }
 }
 
 /* Responsive */
 @media (max-width: 768px) {
-  .navbar-links a {
-    font-size: 0.9em;
-    margin: 0 10px;
+  .navbar-links {
+      display: none;
+  }
+
+  .burger-icon {
+      display: flex;
+  }
+
+  .language-switcher {
+      display: none;
   }
 }

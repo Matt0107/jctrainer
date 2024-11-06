@@ -1,19 +1,22 @@
 import React from 'react';
-import { FiPhone, FiMail } from 'react-icons/fi'; // Importation des icônes
+import { FiPhone, FiMail } from 'react-icons/fi';
+import { useTranslation } from 'react-i18next';
 import '../styles/Footer.css';
 
 const Footer = () => {
+    const { t } = useTranslation();
+
     return (
         <footer className="footer" id="footer">
             <div className="footer-content">
                 <div className="contact-info">
-                    <h3>Contact</h3>
-                    <p>Jean-Charles, coach sportif</p>
-                    <p><FiPhone className="contact-icon" /> 06 12 34 56 78</p>
-                    <p><FiMail className="contact-icon" /> contact@jctrainer.com</p>
+                    <h3>{t('footer.contact')}</h3>
+                    <p>{t('footer.description')}</p>
+                    <p><FiPhone className="contact-icon" /> {t('footer.phone')}</p>
+                    <p><FiMail className="contact-icon" /> {t('footer.email')}</p>
                 </div>
             </div>
-            <p className="footer-note">© JC Trainer 2024. Tous droits réservés. Powered by Serve And Code</p>
+            <p className="footer-note">{t('footer.note')}</p>
         </footer>
     );
 };

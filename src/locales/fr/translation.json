@@ -7,13 +7,53 @@
       "contact": "Contact"
     },
     "footer": {
-      "contactInfo": "Coordonnées",
-      "phone": "Téléphone",
-      "email": "Email"
+      "contact": "Contact",
+      "description": "Jean-Charles, coach sportif",
+      "phone": "06 12 34 56 78",
+      "email": "contact@jctrainer.com",
+      "note": "© JC Trainer 2024. Tous droits réservés. Powered by Serve And Code"
+    },
+    "hero": {
+      "title": "Le coaching sur mesure juste pour vous",
+      "discover": "Découvrir"
     },
     "philosophy": {
-      "title": "Une Philosophie Unique",
-      "description": "Jean-Charles, coach sportif indépendant avec plus de 10 ans d'expérience, a développé une approche personnalisée..."
+      "title": "Une philosophie unique",
+      "description1": "Jean-Charles, coach sportif indépendant depuis plus de 10 ans, a su développer une approche personnalisée et adaptée à chaque client. Sa philosophie repose sur la motivation, la persévérance, et l'écoute de chacun pour atteindre des objectifs de bien-être physique et mental.",
+      "description2": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum et libero a nulla tempus dictum. Praesent dapibus venenatis nulla at vehicula. Fusce a tristique arcu, ac accumsan leo."
+    },
+    "services": {
+      "title": "Une méthode unique, précise et efficace",
+      "description": "Chaque personne a son métabolisme, son rythme de vie et ses besoins. Ma mission est de vous offrir un coaching personnalisé et adapté pour atteindre vos objectifs de façon durable.",
+      "timing": {
+        "title": "Gérez le timing",
+        "description": "Gérez le timing de la nutrition pour des résultats optimaux."
+      },
+      "cycle": {
+        "title": "Cyclez vos entraînements",
+        "description": "Alternez la diète et les entraînements pour optimiser les résultats."
+      },
+      "tension": {
+        "title": "Alliez tension et métabolisme",
+        "description": "Combinez la tension mécanique et le stress métabolique."
+      }
+    },
+    "testimonials": {
+      "title": "Nos clients en parlent mieux que nous",
+      "clients": [
+        {
+          "name": "Richard Strul",
+          "text": "Je suis arrivé chez JC Trainer il y a 13 ans avec un dos en vrac, une jambe à moitié paralysée par la sciatique, et la sentence des médecins : plus de sport. Au bout de quelques mois, j'avais repris le badminton, le volley et le ski hors piste."
+        },
+        {
+          "name": "Marie Dupont",
+          "text": "JC Trainer a totalement changé ma vie. Grâce à lui, j'ai retrouvé la forme et la motivation que j'avais perdues depuis des années."
+        },
+        {
+          "name": "Paul Durand",
+          "text": "Un coaching personnalisé et une écoute incroyable. Jean-Christophe sait vraiment comment motiver et adapter les exercices à chacun."
+        }
+      ]
     }
   }
   
