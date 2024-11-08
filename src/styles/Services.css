@@ -1,74 +1,96 @@
+/* Section principale */
 .services-section {
-    background-color: #111; /* Fond noir pour correspondre au thème */
-    color: #fff;
-    padding: 60px 20px;
-    text-align: center;
-  }
-  
-  .services-title {
-    font-size: 2em;
-    margin-bottom: 20px;
-    text-transform: uppercase;
-  }
-  
-  .services-description {
-    max-width: 800px;
-    margin: 0 auto 40px auto;
-    font-size: 1em;
-    line-height: 1.6;
-    color: #aaa; /* Texte secondaire légèrement plus clair */
-  }
-  
+  color: #fff;
+  padding: 60px 0px;
+  text-align: center;
+  background-color: #111; /* Fond noir pour la section complète */
+}
+
+/* Première partie avec le fond en filigrane */
+.services-intro {
+  background-image: url('../assets/test.jpg'); /* Chemin vers l'image en filigrane */
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  opacity: 0.9;
+  min-height: 700px; /* Hauteur minimale pour agrandir la section */
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+/* Ajout de padding uniquement pour le contenu interne */
+.services-title,
+.services-description {
+  padding: 0 20px; /* Ajoute du padding uniquement autour du texte */
+}
+
+.services-title {
+  font-size: 2em;
+  margin-bottom: 20px;
+  text-transform: uppercase;
+}
+
+.services-description {
+  max-width: 800px;
+  margin: 0 auto 40px auto;
+  font-size: 1em;
+  line-height: 1.6;
+  color: #aaa; /* Texte secondaire légèrement plus clair */
+}
+
+/* Deuxième partie avec la grille des services */
+.services-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr); /* Trois colonnes pour les services */
+  gap: 40px;
+  padding: 40px 20px; /* Espace entre les deux parties */
+}
+
+.service {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+}
+
+.service-icon {
+  font-size: 3em;
+  color: #D4AF37; /* Couleur dorée pour les icônes */
+  margin-bottom: 15px;
+}
+
+.service-title {
+  font-size: 1.2em;
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+.service-description {
+  font-size: 0.9em;
+  color: #ddd;
+}
+
+/* Responsiveness */
+@media (max-width: 1024px) {
   .services-grid {
-    display: grid;
-    grid-template-columns: repeat(3, 1fr); /* Quatre colonnes pour les services */
-    gap: 40px;
+    grid-template-columns: repeat(2, 1fr); /* Deux colonnes sur les écrans moyens */
+    gap: 20px;
   }
-  
-  .service {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    text-align: center;
+}
+
+@media (max-width: 768px) {
+  .services-grid {
+    grid-template-columns: 1fr; /* Une seule colonne sur les petits écrans */
+    gap: 20px;
   }
-  
+
   .service-icon {
-    font-size: 3em;
-    color: #D4AF37; /* Couleur cyan pour les icônes */
-    margin-bottom: 15px;
+    font-size: 2.5em; /* Réduit légèrement la taille des icônes */
   }
-  
-  .service-title {
-    font-size: 1.2em;
-    font-weight: bold;
-    margin-bottom: 10px;
+
+  .services-title {
+    font-size: 1.5em; /* Réduit la taille du titre sur mobile */
   }
-  
-  .service-description {
-    font-size: 0.9em;
-    color: #ddd;
-  }
-  
-  /* Responsiveness */
-  @media (max-width: 1024px) {
-    .services-grid {
-      grid-template-columns: repeat(2, 1fr); /* Deux colonnes sur les écrans moyens */
-      gap: 20px;
-    }
-  }
-  
-  @media (max-width: 768px) {
-    .services-grid {
-      grid-template-columns: 1fr; /* Une seule colonne sur les petits écrans */
-      gap: 20px;
-    }
-  
-    .service-icon {
-      font-size: 2.5em; /* Réduit légèrement la taille des icônes */
-    }
-  
-    .services-title {
-      font-size: 1.5em; /* Réduit la taille du titre sur mobile */
-    }
-  }
-  
+}

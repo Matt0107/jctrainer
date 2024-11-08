@@ -7,9 +7,14 @@ function Services() {
     const { t } = useTranslation();
 
     return (
-        <section className="services-section full-height-section" id="services-section">
-            <h2 className="services-title">{t('services.title')}</h2>
-            <p className="services-description">{t('services.description')}</p>
+        <section className="services-section" id="services-section">
+            {/* Première partie avec le fond en filigrane */}
+            <div className="services-intro">
+                <h2 className="services-title">{t('services.title')}</h2>
+                <p className="services-description">{t('services.description')}</p>
+            </div>
+            
+            {/* Deuxième partie avec les icônes de services */}
             <div className="services-grid">
                 <div className="service">
                     <FiClock className="service-icon" />

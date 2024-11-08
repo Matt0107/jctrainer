@@ -1,76 +1,74 @@
 .hero-section {
-    background-image: url('../assets/coach-home.jpg');
-    background-size: cover;
-    background-position: center;
-    background-repeat: no-repeat;
-    height: 100vh;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    color: #fff;
-    text-align: center;
-    padding: 0 20px;
+  background-image: url('../assets/coach-home.jpg');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  color: #fff;
+  text-align: center;
+  padding: 0 20px;
+}
+
+.hero-section h1 {
+  font-size: 3em;
+  font-weight: bold;
+  text-transform: uppercase;
+}
+
+.hero-section h1 span {
+  color: #D4AF37;
+}
+
+/* Scroll Indicator */
+.scroll-indicator {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 20px;
+  color: #D4AF37;
+  font-size: 1em;
+  font-weight: 500;
+  cursor: pointer;
+}
+
+.scroll-indicator span {
+  margin-bottom: 10px;
+}
+
+.scroll-line {
+  width: 2px;
+  height: 40px;
+  background-color: transparent; /* Rendre le fond transparent */
+  position: relative;
+  overflow: hidden;
+}
+
+.scroll-line::before {
+  content: '';
+  position: absolute;
+  width: 2px;
+  height: 100%; /* Le trait couvre toute la hauteur de .scroll-line */
+  background-color: #D4AF37;
+  animation: scroll-down-animation 1.5s infinite linear;
+}
+
+/* Animation for the scroll line */
+@keyframes scroll-down-animation {
+  0% {
+      transform: translateY(-100%); /* Commence en haut, en dehors de la zone visible */
   }
-  
+  100% {
+      transform: translateY(100%); /* Descend en bas, en dehors de la zone visible */
+  }
+}
+
+/* Responsiveness */
+@media (max-width: 768px) {
   .hero-section h1 {
-    font-size: 3em;
-    font-weight: bold;
-    text-transform: uppercase;
-  }
-  
-  .hero-section h1 span {
-    color: #D4AF37;
-  }
-  
-  /* Scroll Indicator */
-  .scroll-indicator {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    margin-top: 20px;
-    color: #D4AF37;
-    font-size: 1em;
-    font-weight: 500;
-    cursor: pointer;
-  }
-  
-  .scroll-indicator span {
-    margin-bottom: 10px;
-  }
-  
-  .scroll-line {
-    width: 2px;
-    height: 40px;
-    background-color: #D4AF37;
-    position: relative;
-    overflow: hidden;
-  }
-  
-  .scroll-line::before {
-    content: '';
-    position: absolute;
-    top: -40px;
-    width: 2px;
-    height: 40px;
-    background-color: #D4AF37;
-    animation: scroll-down-animation 1.5s infinite linear;
-  }
-  
-  /* Animation for the scroll line */
-  @keyframes scroll-down-animation {
-    0% {
-      top: -40px;
-    }
-    100% {
-      top: 40px;
-    }
-  }
-  
-  /* Responsiveness */
-  @media (max-width: 768px) {
-    .hero-section h1 {
       font-size: 2em;
-    }
   }
-  
+}
