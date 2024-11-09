@@ -1,63 +1,107 @@
 .philosophy-section {
-    display: flex;
-    flex-direction: row; /* Aligne le texte et l'image horizontalement */
-    justify-content:center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #111;
+  color: #fff;
+  padding: 60px 80px;
+  box-sizing: border-box;
+  overflow: hidden;
+  width: 100%;
+}
+
+.philosophy-wrapper {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  max-width: 1200px;
+  width: 100%;
+  gap: 20px; /* Ajoute un espacement entre le texte et l'image */
+}
+
+.philosophy-content, .philosophy-image {
+  flex: 1;
+  padding: 20px;
+  box-sizing: border-box;
+}
+
+.philosophy-content {
+  max-width: 500px;
+}
+
+.philosophy-content h2 {
+  font-size: 2em;
+  margin-bottom: 20px;
+  text-transform: uppercase;
+}
+
+.philosophy-content p {
+  font-size: 1em;
+  line-height: 1.6;
+  margin-bottom: 10px;
+}
+
+.philosophy-image {
+  max-width: 400px;
+  text-align: center;
+}
+
+.philosophy-image img {
+  max-width: 100%;
+  height: auto;
+  border-radius: 3px;
+  box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.5);
+  object-fit: cover;
+}
+
+/* Responsiveness */
+
+/* Laptop - Écran moyen */
+@media (max-width: 1024px) {
+  .philosophy-section {
+    padding: 40px 20px;
+  }
+
+  .philosophy-wrapper {
+    flex-direction: column; /* Passe en colonne sur les écrans moyens */
     align-items: center;
-    background-color: #111; /* Fond noir */
-    color: #fff;
-    padding: 60px 80px;
-    box-sizing: border-box;
+    gap: 30px; /* Espace entre les éléments en colonne */
   }
-  
-  .philosophy-content {
-    flex: 1;
-    max-width: 500px; /* Limite la largeur du texte pour un rendu plus contenu */
+
+  .philosophy-content, .philosophy-image {
+    max-width: 100%;
   }
-  
+
   .philosophy-content h2 {
-    font-size: 2em;
-    margin-bottom: 20px;
-    text-transform: uppercase;
+    font-size: 1.8em;
   }
-  
-  .philosophy-content p {
-    font-size: 1em;
-    line-height: 1.6;
-    margin-bottom: 10px;
+}
+
+/* Smartphone - Écran petit */
+@media (max-width: 768px) {
+  .philosophy-section {
+    padding: 20px 15px;
   }
-  
-  .philosophy-image {
-    flex: 1;
-    display: flex;
-    justify-content: center;
+
+  .philosophy-wrapper {
+    flex-direction: column; /* Passe en colonne sur mobile */
     align-items: center;
-    max-width: 450px; /* Limite la largeur de l'image pour qu'elle reste dans la section */
   }
-  
+
+  .philosophy-content h2 {
+    font-size: 1.5em;
+  }
+
+  .philosophy-content p {
+    font-size: 0.9em;
+  }
+
+  .philosophy-content, .philosophy-image {
+    max-width: 100%;
+    margin-bottom: 20px; /* Ajoute de l'espace entre les éléments */
+  }
+
   .philosophy-image img {
-    max-width: 90%;
-    height: auto;
-    border-radius: 3px;
-    box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.5); /* Légère ombre portée pour plus de style */
+    max-width: 80%; /* Réduit légèrement l'image pour les petits écrans */
   }
-  
-  /* Responsiveness */
-  @media (max-width: 768px) {
-    .philosophy-section {
-      flex-direction: column; /* Passe en disposition verticale sur les petits écrans */
-      padding: 20px 15px;
-    }
-  
-    .philosophy-content, .philosophy-image {
-      max-width: 100%; /* Chaque élément prend toute la largeur sur mobile */
-    }
-  
-    .philosophy-content h2 {
-      font-size: 1.5em;
-    }
-  
-    .philosophy-image img {
-      max-width: 80%; /* Réduit l'image pour les petits écrans */
-    }
-  }
-  
+}

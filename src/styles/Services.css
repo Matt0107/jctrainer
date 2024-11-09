@@ -45,7 +45,7 @@
   display: grid;
   grid-template-columns: repeat(3, 1fr); /* Trois colonnes pour les services */
   gap: 40px;
-  padding: 40px 20px; /* Espace entre les deux parties */
+  padding: 80px 20px; /* Espace entre les deux parties */
 }
 
 .service {
