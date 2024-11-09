@@ -1,5 +1,5 @@
 import React from 'react';
-import { FiClock, FiCalendar, FiHeart, FiPieChart } from 'react-icons/fi';
+import { FiClock, FiCalendar, FiHeart } from 'react-icons/fi';
 import { useTranslation } from 'react-i18next';
 import '../styles/Services.css';
 
