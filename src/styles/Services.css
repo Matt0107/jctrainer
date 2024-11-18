@@ -8,7 +8,7 @@
 
 /* Première partie avec le fond en filigrane */
 .services-intro {
-  background-image: url('../assets/test.jpg'); /* Chemin vers l'image en filigrane */
+  background-image: url('../assets/paysage.jpg'); /* Chemin vers l'image en filigrane */
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;

@@ -1,7 +1,7 @@
 import React from 'react';
 import { useTranslation } from 'react-i18next';
 import '../styles/PhilosophySection.css';
-import coachImage from '../assets/Mathieu.jpg';
+import coachImage from '../assets/JC.jpg';
 
 const PhilosophySection = () => {
     const { t } = useTranslation();
