@@ -1,5 +1,5 @@
 import React from 'react';
-import { FiClock, FiCalendar, FiHeart } from 'react-icons/fi';
+import { FaDumbbell, FaCalendarAlt, FaHeartbeat } from 'react-icons/fa';
 import { useTranslation } from 'react-i18next';
 import '../styles/Services.css';
 
@@ -17,17 +17,17 @@ function Services() {
             {/* Deuxième partie avec les icônes de services */}
             <div className="services-grid">
                 <div className="service">
-                    <FiClock className="service-icon" />
+                <FaDumbbell className="service-icon" />
                     <h3 className="service-title">{t('services.timing.title')}</h3>
                     <p className="service-description">{t('services.timing.description')}</p>
                 </div>
                 <div className="service">
-                    <FiCalendar className="service-icon" />
+                    <FaCalendarAlt className="service-icon" />
                     <h3 className="service-title">{t('services.cycle.title')}</h3>
                     <p className="service-description">{t('services.cycle.description')}</p>
                 </div>
                 <div className="service">
-                    <FiHeart className="service-icon" />
+                    <FaHeartbeat className="service-icon" />
                     <h3 className="service-title">{t('services.tension.title')}</h3>
                     <p className="service-description">{t('services.tension.description')}</p>
                 </div>
