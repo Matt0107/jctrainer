@@ -8,6 +8,7 @@ const HeroSection = () => {
     return (
         <section className="hero-section" id="hero-section">
             <h1>{t('hero.title')}</h1>
+            <p className="hero-description">{t('hero.subtitle')}</p>
             <div className="scroll-indicator">
                 <span>{t('hero.discover')}</span>
                 <div className="scroll-line"></div>

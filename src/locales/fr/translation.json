@@ -14,28 +14,29 @@
       "note": "© JC Trainer 2024. Tous droits réservés. Powered by Serve And Code"
     },
     "hero": {
-      "title": "Le coaching sur mesure juste pour vous",
-      "discover": "Voir plus"
-    },
+  "title": "Bouger, c'est vivre",
+  "subtitle": "Chaque mouvement que vous faites nourrit à la fois votre corps et votre esprit. En activant vos muscles, vous stimulez votre cerveau, renforcez votre santé mentale et éloignez stress et fatigue. Le mouvement n’est pas juste une action : c’est un élixir naturel contre les défis du quotidien. Ensemble, donnons à votre corps et à votre esprit la vitalité qu’ils méritent.",
+  "discover": "Voir plus"
+},
     "philosophy": {
-      "title": "Une philosophie unique",
-      "description1": "Jean-Charles, coach sportif indépendant depuis plus de 10 ans, a su développer une approche personnalisée et adaptée à chaque client. Sa philosophie repose sur la motivation, la persévérance, et l'écoute de chacun pour atteindre des objectifs de bien-être physique et mental.",
-      "description2": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum et libero a nulla tempus dictum. Praesent dapibus venenatis nulla at vehicula. Fusce a tristique arcu, ac accumsan leo."
+      "title": "Jean-Charles, alias JC",
+      "description1": "Avec 15 années d’expérience en tant que Personal Trainer à Paris, New York, dans les Caraïbes et aujourd’hui à Genève, j’ai perfectionné l’art d’optimiser la posture et de renforcer les muscles profonds. Mon expertise repose sur des méthodes éprouvées et une approche personnalisée, pour révéler le meilleur de vous-même, en alliant force, équilibre et bien-être.",
+      "description2": "Le Pilates et le Functional Training enrichissent mon expertise pour offrir un accompagnement global et sur-mesure. Ces disciplines complémentaires permettent de développer force, souplesse et équilibre tout en respectant les besoins spécifiques de chaque individu."
     },
     "services": {
       "title": "Une méthode unique, précise et efficace",
-      "description": "Chaque personne a son métabolisme, son rythme de vie et ses besoins. Ma mission est de vous offrir un coaching personnalisé et adapté pour atteindre vos objectifs de façon durable.",
+      "description": "Mon approche repose sur une collaboration étroite avec mes clients afin de restaurer leur mobilité, d'atténuer les douleurs et de prévenir les blessures futures. Ensemble, reconstruisons votre force, améliorons votre posture et développons votre confiance de manière durable et sécuritaire.",
       "timing": {
-        "title": "Gérez le timing",
-        "description": "Gérez le timing de la nutrition pour des résultats optimaux."
+        "title": "Optimisez votre force",
+        "description": "Un programme adapté pour renforcer vos muscles et améliorer votre posture au quotidien."
       },
       "cycle": {
-        "title": "Cyclez vos entraînements",
-        "description": "Alternez la diète et les entraînements pour optimiser les résultats."
+        "title": "Planifiez vos objectifs",
+        "description": "Des séances structurées et une progression sur mesure pour atteindre vos résultats en toute sérénité."
       },
       "tension": {
-        "title": "Alliez tension et métabolisme",
-        "description": "Combinez la tension mécanique et le stress métabolique."
+        "title": "Équilibrez corps et esprit",
+        "description": "Combinez bien-être physique et mental grâce à une approche globale et personnalisée."
       }
     },
     "testimonials": {

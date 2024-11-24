@@ -17,10 +17,16 @@
   font-size: 3em;
   font-weight: bold;
   text-transform: uppercase;
+  margin-bottom: 20px; /* Ajout d'espace sous le titre */
 }
 
-.hero-section h1 span {
-  color: #D4AF37;
+.hero-section p.hero-description {
+  font-size: 1.2em;
+  font-style: italic;
+  color: #D4AF37; /* Doré pour le texte inspirant */
+  line-height: 1.6;
+  max-width: 800px;
+  margin: 0 auto 40px auto; /* Centre le paragraphe */
 }
 
 /* Scroll Indicator */
@@ -59,16 +65,20 @@
 /* Animation for the scroll line */
 @keyframes scroll-down-animation {
   0% {
-      transform: translateY(-100%); /* Commence en haut, en dehors de la zone visible */
+    transform: translateY(-100%); /* Commence en haut, en dehors de la zone visible */
   }
   100% {
-      transform: translateY(100%); /* Descend en bas, en dehors de la zone visible */
+    transform: translateY(100%); /* Descend en bas, en dehors de la zone visible */
   }
 }
 
 /* Responsiveness */
 @media (max-width: 768px) {
   .hero-section h1 {
-      font-size: 2em;
+    font-size: 2em;
+  }
+
+  .hero-section p.hero-description {
+    font-size: 1em;
   }
 }
