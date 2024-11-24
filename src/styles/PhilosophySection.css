@@ -45,13 +45,13 @@
 .philosophy-wrapper.visible .philosophy-image {
   opacity: 1;
   transform: translateX(0); /* Image revient à sa position normale */
-  transition-delay: 0.8s;
+  transition-delay: 0.6s;
 }
 
 .philosophy-wrapper.visible .philosophy-content {
   opacity: 1;
   transform: translateX(0); /* Texte revient à sa position normale */
-  transition-delay: 0.8s;
+  transition-delay: 0.6s;
 }
 
 .philosophy-content h2 {

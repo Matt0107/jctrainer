@@ -11,7 +11,12 @@ const Footer = () => {
             <div className="footer-content">
                 <div className="contact-info">
                     <h3>{t('footer.contact')}</h3>
-                    <p><FiMail className="contact-icon" /> {t('footer.email')}</p>
+                    <p>
+                        <a href="mailto:contact@jctrainer.com" className="email-link">
+                            <FiMail className="contact-icon" />
+                            <span>{t('footer.email')}</span>
+                        </a>
+                    </p>
                 </div>
             </div>
             <p className="footer-note">{t('footer.note')}</p>
