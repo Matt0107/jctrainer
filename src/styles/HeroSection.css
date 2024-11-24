@@ -54,7 +54,6 @@
   color: #e9b91a; /* Couleur du texte et de la ligne */
   font-size: 1em;
   font-weight: 500;
-  cursor: pointer;
 }
 
 .scroll-indicator span {
