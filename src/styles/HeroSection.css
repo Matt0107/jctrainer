@@ -91,10 +91,10 @@
 /* Responsiveness */
 @media (max-width: 768px) {
   .hero-section h1 {
-    font-size: 2em;
+    font-size: 1.8em;
   }
 
   .hero-section p.hero-description {
-    font-size: 1em;
+    font-size: 0.9em;
   }
 }
