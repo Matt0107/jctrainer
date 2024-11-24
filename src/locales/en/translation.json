@@ -1,59 +1,57 @@
 {
-    "navbar": {
-      "home": "Home",
-      "philosophy": "Philosophy",
-      "services": "Services",
-      "testimonials": "Testimonials",
-      "contact": "Contact"
+  "navbar": {
+    "home": "Home",
+    "philosophy": "Philosophy",
+    "services": "Services",
+    "testimonials": "Testimonials",
+    "contact": "Contact"
+  },
+  "footer": {
+    "contact": "Contact Me",
+    "email": "contact@jctrainer.com",
+    "note": "© JC Trainer 2024. All rights reserved. Powered by Serve And Code"
+  },
+  "hero": {
+    "title": "Move, it's life",
+    "subtitle": "Every movement you make nourishes both your body and your mind. By activating your muscles, you stimulate your brain, strengthen your mental health, and push away stress and fatigue. Movement is not just an action: it's a natural elixir against the challenges of daily life. Together, let's give your body and mind the vitality they deserve.",
+    "discover": "See more"
+  },
+  "philosophy": {
+    "title": "Jean-Charles, aka JC",
+    "description1": "With 15 years of experience as a Personal Trainer in Paris, New York, the Caribbean, and now Geneva, I have mastered the art of optimizing posture and strengthening deep muscles. My expertise is based on proven methods and a personalized approach to bring out the best in you, combining strength, balance, and well-being.",
+    "description2": "Pilates and Functional Training enhance my expertise to provide comprehensive and tailored support. These complementary disciplines help develop strength, flexibility, and balance while respecting each individual's specific needs."
+  },
+  "services": {
+    "title": "A unique, precise, and effective method",
+    "description": "My approach relies on close collaboration with my clients to restore mobility, alleviate pain, and prevent future injuries. Together, let’s rebuild your strength, improve your posture, and develop your confidence in a sustainable and secure way.",
+    "timing": {
+      "title": "Optimize your strength",
+      "description": "A tailored program to strengthen your muscles and improve your daily posture."
     },
-    "footer": {
-      "contact": "Contact",
-      "description": "Jean-Charles, sports coach",
-      "phone": "06 12 34 56 78",
-      "email": "contact@jctrainer.com",
-      "note": "© JC Trainer 2024. All rights reserved. Powered by Serve And Code"
+    "cycle": {
+      "title": "Plan your goals",
+      "description": "Structured sessions and a customized progression to achieve your results with peace of mind."
     },
-    "hero": {
-      "title": "Tailored coaching just for you",
-      "discover": "See More"
-    },
-    "philosophy": {
-      "title": "A unique philosophy",
-      "description1": "Jean-Charles, an independent sports coach with over 10 years of experience, has developed a personalized approach adapted to each client. His philosophy is based on motivation, perseverance, and listening to help each person achieve physical and mental well-being.",
-      "description2": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum et libero a nulla tempus dictum. Praesent dapibus venenatis nulla at vehicula. Fusce a tristique arcu, ac accumsan leo."
-    },
-    "services": {
-      "title": "A unique, precise, and effective method",
-      "description": "Each person has their own metabolism, lifestyle, and needs. My mission is to provide personalized coaching to help you achieve your goals sustainably.",
-      "timing": {
-        "title": "Manage timing",
-        "description": "Manage nutrition timing for optimal results."
-      },
-      "cycle": {
-        "title": "Cycle your training",
-        "description": "Alternate diet and workouts to optimize results."
-      },
-      "tension": {
-        "title": "Combine tension and metabolism",
-        "description": "Combine mechanical tension with metabolic stress."
-      }
-    },
-    "testimonials": {
-      "title": "Our clients speak better than we do",
-      "clients": [
-        {
-          "name": "Richard Strul",
-          "text": "I came to JC Trainer 13 years ago with a messed-up back, a leg half-paralyzed by sciatica, and doctors saying: no more sports. Within a few months, I was back to playing badminton, volleyball, and even skiing off-piste."
-        },
-        {
-          "name": "Marie Dupont",
-          "text": "JC Trainer completely changed my life. Thanks to him, I regained the fitness and motivation I had lost for years."
-        },
-        {
-          "name": "Paul Durand",
-          "text": "A personalized coaching and incredible listening. Jean-Christophe really knows how to motivate and adapt exercises for everyone."
-        }
-      ]
+    "tension": {
+      "title": "Balance body and mind",
+      "description": "Combine physical and mental well-being with a holistic and personalized approach."
     }
+  },
+  "testimonials": {
+    "title": "Our clients speak better than us",
+    "clients": [
+      {
+        "name": "Richard Strul",
+        "text": "I came to JC Trainer 13 years ago with a bad back, a leg partially paralyzed by sciatica, and the doctors’ verdict: no more sports. Within a few months, I was back to playing badminton, volleyball, and off-piste skiing."
+      },
+      {
+        "name": "Marie Dupont",
+        "text": "JC Trainer completely changed my life. Thanks to him, I regained the shape and motivation I had lost for years."
+      },
+      {
+        "name": "Paul Durand",
+        "text": "Personalized coaching and incredible attentiveness. Jean-Christophe really knows how to motivate and adapt exercises to each individual."
+      }
+    ]
   }
-  
+}
