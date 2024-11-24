@@ -6,27 +6,28 @@ import '../styles/Services.css';
 function Services() {
     const { t } = useTranslation();
     const sectionRef = useRef(null);
-    const [isVisible, setIsVisible] = useState(false);
+    const [isVisible] = useState(false);
 
     useEffect(() => {
         const observer = new IntersectionObserver(
-            ([entry]) => {
-                if (entry.isIntersecting) {
-                    setIsVisible(true);
-                }
-            },
-            { threshold: 0.4 } // Trigger when 30% of the section is visible
+          (entries) => {
+            entries.forEach((entry) => {
+              if (entry.isIntersecting) {
+                entry.target.classList.add('visible');
+              }
+            });
+          },
+          { threshold: 0.4 }
         );
-        if (sectionRef.current) {
-            observer.observe(sectionRef.current);
-        }
-
+      
+        const services = sectionRef.current?.querySelectorAll('.service');
+      
+        services?.forEach((service) => observer.observe(service));
+      
         return () => {
-            if (sectionRef.current) {
-                observer.unobserve(sectionRef.current);
-            }
+          services?.forEach((service) => observer.unobserve(service));
         };
-    }, []);
+      }, []);
 
     return (
         <section

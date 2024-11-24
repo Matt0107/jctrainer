@@ -57,6 +57,10 @@
   opacity: 0; /* Rendre les éléments invisibles au départ */
   transition: transform 0.5s ease, opacity 0.5s ease; /* Transition pour le zoom */
 }
+.service.visible {
+  transform: scale(1);
+  opacity: 1;
+}
 
 .service-icon {
   font-size: 3em;
