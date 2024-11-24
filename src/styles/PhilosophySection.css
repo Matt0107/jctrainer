@@ -16,17 +16,42 @@
   align-items: center;
   max-width: 1200px;
   width: 100%;
-  gap: 20px; /* Ajoute un espacement entre le texte et l'image */
+  gap: 20px;
+  opacity: 0; /* Cache la section avant l'animation */
+  transform: translateY(20px); /* Décalage vers le bas */
+  transition: opacity 0.8s ease-in-out, transform 0.8s ease-in-out;
 }
 
-.philosophy-content, .philosophy-image {
+.philosophy-wrapper.visible {
+  opacity: 1;
+  transform: translateY(0); /* Retourne à la position normale */
+}
+
+.philosophy-content,
+.philosophy-image {
   flex: 1;
   padding: 20px;
   box-sizing: border-box;
+  position: relative;
+  opacity: 0;
+  transform: translateX(100%); /* Position initiale hors écran pour le texte */
+  transition: opacity 0.8s ease-in-out, transform 0.8s ease-in-out;
 }
 
-.philosophy-content {
-  max-width: 600px;
+.philosophy-image {
+  transform: translateX(-100%); /* Image commence hors écran à gauche */
+}
+
+.philosophy-wrapper.visible .philosophy-image {
+  opacity: 1;
+  transform: translateX(0); /* Image revient à sa position normale */
+  transition-delay: 0.8s;
+}
+
+.philosophy-wrapper.visible .philosophy-content {
+  opacity: 1;
+  transform: translateX(0); /* Texte revient à sa position normale */
+  transition-delay: 0.8s;
 }
 
 .philosophy-content h2 {
@@ -41,13 +66,8 @@
   margin-bottom: 10px;
 }
 
-.philosophy-image {
-  max-width: 400px;
-  text-align: center;
-}
-
 .philosophy-image img {
-  max-width: 100%;
+  max-width: 75%;
   height: auto;
   border-radius: 3px;
   box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.5);
@@ -58,22 +78,21 @@
 
 /* Laptop - Écran moyen */
 @media (max-width: 1024px) {
-  .philosophy-section {
-    padding: 40px 20px;
-  }
-
   .philosophy-wrapper {
-    flex-direction: column; /* Passe en colonne sur les écrans moyens */
-    align-items: center;
-    gap: 30px; /* Espace entre les éléments en colonne */
+    flex-direction: column;
+    gap: 30px;
   }
 
-  .philosophy-content, .philosophy-image {
-    max-width: 100%;
+  .philosophy-content,
+  .philosophy-image {
+    transform: translateY(50%); /* Passe à une animation verticale */
+    transition: opacity 0.8s ease-in-out, transform 0.8s ease-in-out;
   }
 
-  .philosophy-content h2 {
-    font-size: 1.8em;
+  .philosophy-wrapper.visible .philosophy-content,
+  .philosophy-wrapper.visible .philosophy-image {
+    transform: translateY(0);
+    opacity: 1;
   }
 }
 
@@ -81,11 +100,6 @@
 @media (max-width: 768px) {
   .philosophy-section {
     padding: 20px 15px;
-  }
-
-  .philosophy-wrapper {
-    flex-direction: column; /* Passe en colonne sur mobile */
-    align-items: center;
   }
 
   .philosophy-content h2 {
@@ -96,12 +110,15 @@
     font-size: 0.9em;
   }
 
-  .philosophy-content, .philosophy-image {
-    max-width: 100%;
-    margin-bottom: 20px; /* Ajoute de l'espace entre les éléments */
+  .philosophy-content,
+  .philosophy-image {
+    margin-bottom: 20px;
+    transform: translateY(50%);
   }
 
-  .philosophy-image img {
-    max-width: 80%; /* Réduit légèrement l'image pour les petits écrans */
+  .philosophy-wrapper.visible .philosophy-content,
+  .philosophy-wrapper.visible .philosophy-image {
+    transform: translateY(0);
+    opacity: 1;
   }
 }
