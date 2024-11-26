@@ -41,16 +41,16 @@
     "title": "Our clients speak better than us",
     "clients": [
       {
-        "name": "Richard Strul",
-        "text": "I came to JC Trainer 13 years ago with a bad back, a leg partially paralyzed by sciatica, and the doctors’ verdict: no more sports. Within a few months, I was back to playing badminton, volleyball, and off-piste skiing."
+        "name": "Richard",
+        "text": "Thanks to Jean-Charles, I regained impeccable posture and eliminated my back pain. His personalized sessions restored my confidence and daily well-being."
       },
       {
-        "name": "Marie Dupont",
-        "text": "JC Trainer completely changed my life. Thanks to him, I regained the shape and motivation I had lost for years."
+        "name": "Marie",
+        "text": "His sessions combine effort and enjoyment while respecting my body. I feel stronger, more balanced, and full of energy thanks to him."
       },
       {
-        "name": "Paul Durand",
-        "text": "Personalized coaching and incredible attentiveness. Jean-Christophe really knows how to motivate and adapt exercises to each individual."
+        "name": "Paul",
+        "text": "His tailored program helped me achieve my goals while avoiding injuries. Every session is a real pleasure!"
       }
     ]
   }

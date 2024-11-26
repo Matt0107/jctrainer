@@ -41,16 +41,16 @@
       "title": "Nos clients en parlent mieux que nous",
       "clients": [
         {
-          "name": "Richard Strul",
-          "text": "Je suis arrivé chez JC Trainer il y a 13 ans avec un dos en vrac, une jambe à moitié paralysée par la sciatique, et la sentence des médecins : plus de sport. Au bout de quelques mois, j'avais repris le badminton, le volley et le ski hors piste."
+          "name": "Richard",
+          "text": "Grâce à Jean-Charles, j’ai retrouvé une posture impeccable et éliminé mes douleurs dorsales. Ses séances personnalisées m’ont redonné confiance et bien-être au quotidien."
         },
         {
-          "name": "Marie Dupont",
-          "text": "JC Trainer a totalement changé ma vie. Grâce à lui, j'ai retrouvé la forme et la motivation que j'avais perdues depuis des années."
+          "name": "Marie",
+          "text": "Ses séances allient effort et plaisir, tout en respectant mon corps. Je me sens plus forte, plus équilibrée et pleine d’énergie grâce à lui."
         },
         {
-          "name": "Paul Durand",
-          "text": "Un coaching personnalisé et une écoute incroyable. Jean-Christophe sait vraiment comment motiver et adapter les exercices à chacun."
+          "name": "Paul",
+          "text": "Son programme sur-mesure m’a permis d’atteindre mes objectifs tout en évitant les blessures. Chaque séance est un vrai plaisir !"
         }
       ]
     }
